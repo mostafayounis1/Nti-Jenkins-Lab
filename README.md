@@ -3,8 +3,7 @@
 
 
 ## Shared Libirary Repository
-https://github.com/AliKhamed/shared_library.git
-
+https://github.com/mostafayounis1/Jenkins-Shared-Library.git
 ## Pipeline Overview
 
 The Jenkins pipeline follows these stages to build, push, edite and deploy Docker images to dockerhub and an Minikube cluster:
