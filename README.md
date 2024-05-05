@@ -70,7 +70,7 @@ stage('Deploy on k8s Cluster') {
             steps {
                 script { 
                 	dir('k8s') {
-				         deployOnKubernetes("${k8sCredentialsID}", "${branchName}")
+				         deployOnKubernetes("${k8sCredentialsID}")
                     }
                 }
             }
@@ -95,19 +95,17 @@ In case of pipeline success or failure, the following messages will be displayed
     }
 ```
 ----
-### Successfully Run  Multibranch Pipeline
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/mul.png)
+### K8s caredntials
+![Screenshot 2024-05-01 225903](https://github.com/mostafayounis1/Nti-Jenkins-Lab/assets/167571650/1b459746-4684-4f35-be91-8cf084bc6a05)
+
+### Successfully Run  Pipeline
+
+![Screenshot 2024-05-04 232200](https://github.com/mostafayounis1/Nti-Jenkins-Lab/assets/167571650/04a23ecd-5577-4b23-819c-592502b16d31)
 
 
 
-### Successfully Run Test Branch Pipeline On k8s minikube cluster
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/test1.png)
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/test2.png)
+### Successfully Run Test  Pipeline On k8s minikube cluster
+![Screenshot 2024-05-04 232407](https://github.com/mostafayounis1/Nti-Jenkins-Lab/assets/167571650/db72adcc-98d8-4043-b199-faef8629cfe6)
 
-### Successfully Run Development Branch Pipeline On k8s minikube cluster
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/dev1.png)
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/dev2.png)
 
-### Successfully Run Production Branch Pipeline On k8s minikube cluster
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/prod1.png)
-![](https://github.com/AliKhamed/Nti-Jenkins-Lab/blob/main/screenshots/prod2.png)
+
