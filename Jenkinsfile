@@ -3,8 +3,8 @@ pipeline {
     agent any
     
     environment {
-        dockerHubCredentialsID	            = 'dockerhub'  		    			      // DockerHub credentials ID.
-        imageName   		            = 'mostafayounis0/nti-python-app'     			// DockerHub repo/image name.
+        dockerHubCredentialsID	            = 'docker'  		    			      // DockerHub credentials ID.
+        imageName   		            = 'mostafayounis0/app'     			// DockerHub repo/image name.
 	    k8sCredentialsID	            = 'kubernetes'	    				     // KubeConfig credentials ID.    
     }
     
